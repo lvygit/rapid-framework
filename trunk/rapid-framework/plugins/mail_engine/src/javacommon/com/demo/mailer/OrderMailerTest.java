@@ -1,4 +1,4 @@
-package javacommon.mail;
+package com.demo.mailer;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -29,7 +29,4 @@ public class OrderMailerTest extends TestCase {
 		model.put("username", "badqiu");
 		orderMailer.sendConfirmOrder(model);
 		
-		Thread.sleep(1000 * 5);
-	}
-	
-}
+		
