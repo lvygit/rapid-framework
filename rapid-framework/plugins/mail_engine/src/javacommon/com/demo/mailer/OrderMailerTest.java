@@ -30,7 +30,7 @@ public class OrderMailerTest extends TestCase {
 		orderMailer = (OrderMailer)context.getBean("orderMailer");
 	}
 	
-	public void testSendFromOrderMailer() throws TemplateException, IOExorderMailer.sendConfirmOrder("badqiu"	orderMailer.sendConfirmOrder(7);
+	public void testSendFromOrderMailer() throws TemplateException, IOExorderMailer.sendConfirmOrder("badqiu"	orderMailer.sendConfirmOrder(8);
 	}
 	
 }
