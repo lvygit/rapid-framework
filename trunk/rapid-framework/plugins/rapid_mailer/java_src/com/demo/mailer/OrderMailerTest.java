@@ -22,7 +22,6 @@ import freemarker.template.TemplateException;
  *
  */
 public class OrderMailerTest extends TestCase {
-	AsyncJavaMailSenderUtils engine;
 	OrderMailer orderMailer;
 	
 	public void setUp()throws Exception {
@@ -30,7 +29,7 @@ public class OrderMailerTest extends TestCase {
 		orderMailer = (OrderMailer)context.getBean("orderMailer");
 	}
 	
-	public void testSendFromOrderMailer() throException {
+	public void testSendFromOrderMailer() throws TemplateException, IOException, Exception {
 		AsyncToken token = orderMailer.sendConfirmOrder("badqiu");
 		
 		token.waitForResult();
